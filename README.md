@@ -7,6 +7,7 @@ For detailed instructions on how to get started, check out this [guide](https://
 
 ### Functions:
 [1] Basic functions
+
         * Player can not move off screen
         * Vehicles cross the screen
         * Vehicle-player collisions happen
