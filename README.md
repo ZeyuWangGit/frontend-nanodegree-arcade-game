@@ -11,5 +11,7 @@ For detailed instructions on how to get started, check out this [guide](https://
         * Vehicles cross the screen
         * Vehicle-player collisions happen
         * Vehicle-player collision resets the game and the score will alse be reset.
+        
 [2] When player reach the other side of the river, the score increase 50. If the player then press 'up' or 'down', the player will go to the staring position.
+
 [3] User can change characters by click the characters on the right.
