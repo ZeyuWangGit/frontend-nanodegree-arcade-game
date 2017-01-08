@@ -25,8 +25,8 @@ var Engine = (function(global) {
         ctx = canvas.getContext('2d'),
         lastTime;
 
-    canvas.width = 505;
-    canvas.height = 606;
+    canvas.width = 606;
+    canvas.height = 626;
     doc.body.appendChild(canvas);
 
     /* This function serves as the kickoff point for the game loop itself
@@ -66,6 +66,13 @@ var Engine = (function(global) {
     function init() {
         reset();
         lastTime = Date.now();
+        ctx.drawImage(Resources.get('images/char-boy.png'), 5*101, 0+20);
+        ctx.drawImage(Resources.get('images/char-cat-girl.png'), 5*101, 1*83+20);
+        ctx.drawImage(Resources.get('images/char-horn-girl.png'), 5*101, 2*83+20);
+        ctx.drawImage(Resources.get('images/char-pink-girl.png'), 5*101, 3*83+20);
+        ctx.drawImage(Resources.get('images/char-princess-girl.png'), 5*101, 4*83+30);
+        ctx.font="20px Georgia";
+        ctx.fillText("Score: 0", 10,6*83+110);
         main();
     }
 
@@ -136,6 +143,7 @@ var Engine = (function(global) {
             }
         }
 
+
         renderEntities();
     }
 
@@ -171,7 +179,13 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy.png',
+        'images/char-cat-girl.png',
+        'images/char-horn-girl.png',
+        'images/char-pink-girl.png',
+        'images/char-princess-girl.png',
+        'images/Heart.png'
+
     ]);
     Resources.onReady(init);
 
